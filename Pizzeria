@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display: flex;
+            flex-direction: row;
+        }
+        header p {
+            width: 50%;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+  justify-content: center;
+        }
+       
+        main {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        
+       
+        img {
+            max-width: 100%;
+            
+
+}
+    </style>
+</head>
+<body>
+<header>
+    <p>
+<h1>
+    Pizzeria
+</h1></p>
+<p id = "immagine">
+    
+    <p>
+ <img src="pizza.jpeg" alt="">  </p> 
+ 
+</p>
+
+</header>
+<main>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis provident minus corrupti, in minima nam voluptate ex, blanditiis natus placeat deserunt adipisci cumque velit maxime impedit suscipit architecto sed quidem!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cumque hic quis dolore? Deserunt aspernatur eligendi iusto, animi exercitationem, officiis dicta excepturi consequuntur labore vitae, modi accusantium rem non nisi.
+  </p> 
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum pariatur tempora dolore perspiciatis corrupti vel cum quas nobis officiis nesciunt, nemo eligendi recusandae necessitatibus ab temporibus autem sint tenetur.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur eius sit quisquam perspiciatis excepturi iure voluptates amet cumque, fugiat nesciunt iste nemo laudantium voluptate! Voluptas cum doloribus sit praesentium veritatis.
+  </p> 
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et atque, dicta dolorem odio molestiae mollitia nemo tempora velit reprehenderit. Distinctio, accusamus. Ea officia exercitationem itaque. Facilis incidunt delectus esse eos?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis id dolore at ipsam ducimus saepe distinctio! Qui sapiente expedita repellat. Error incidunt velit quae delectus harum deserunt iure ad?
+  </p></main>
+</body>
+</html>
