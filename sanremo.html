@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exc Ducati Panigale Superleggera</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .fa-youtube {
+        background: #bb0000;
+        color: white;
+        }
+
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+
+        .item1 { grid-area: header; 
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            'p1   p2  p3';
+            
+        
+        }
+        
+        
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+          gap: 10px;
+          background-color: antiquewhite;
+          padding: 10px;
+        }
+        .item1 h1 {
+            grid-area: p2;
+        }
+        #par {
+            grid-area: p2;
+            align-items: center;
+          justify-content: center;
+            
+        }
+        .item1  p {
+            grid-area: p3;
+        }
+        .grid-container > div {
+          background-color: azure;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+
+        .item1 img{
+            width: 40%;
+        }
+
+        .item4 img{
+            width: 50%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .grid-container{
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        </style>
+</head>
+<body>
+
+<div class="grid-container">
+
+    <div class="item1"><h1>Angelina Mango</h1><p id = "par"></p><p><a href="#contatti">Contatti</a></p></div>
+
+    <div class="item2">
+        <a href="#">Home</a><br><br>
+        <a href="https://it.wikipedia.org/wiki/Angelina_Mango#Biografia" target="_blank">Carriera</a><br><br>
+        <a href="https://it.wikipedia.org/wiki/Angelina_Mango#Discografia" target="_blank">Canzoni</a><br><br>
+        <a href="https://www.instagram.com/angelinamango_/" target="_blank">Instagram</a>
+    </div>
+
+    <div class="item3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quam nesciunt incidunt debitis accusamus eaque. Recusandae vel tempore, nihil hic inventore, obcaecati, quod quisquam dolore odio fugit culpa eaque reprehenderit.
+
+
+    </div> 
+
+    <div class="item4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi, harum iste doloremque praesentium quod perferendis hic consectetur numquam doloribus placeat! Doloribus est aut modi quas atque veniam aperiam quibusdam?
+
+        <img src="https://media-assets.vanityfair.it/photos/6461f04fbe55bad8ee89e0bb/16:9/w_2560%2Cc_limit/GettyImages-1394962584.jpg" alt="angelina">
+    </div>
+
+    <div id="contatti" class="item5">
+        <a href="https://www.facebook.com/angelinamangooo/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/angelinamango_/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/channel/UCb6_9_Z8QQSEVqvA0GOdTJQ" class="fa fa-youtube"></a>
+    </div>
+
+</div>
+
+</body>
+</html>

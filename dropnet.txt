@@ -1,0 +1,10 @@
+dropnet
+ping immetti nome del sito web
+indirizzo ip restituisce
+server dns di traformare i nome in numeri e viceversa
+putty programma
+route dominio password
+swap memoria tampone
+dominio 1 2 3 livello
+connet start -plt
+system start mysql
