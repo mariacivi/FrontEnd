@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function somma(){
+        var num1= document.getElementById("num1").value;
+        var num2= document.getElementById("num2").value;
+        var somma= parseInt(num1) + parseInt(num2);
+alert(somma);    
+}
+ 
+     function sottrazione(){
+        var num1= document.getElementById("num1").value;
+        var num2= document.getElementById("num2").value;
+        var sottrazione= parseInt(num1) - parseInt(num2);
+alert(sottrazione);
+     }
+   
+     function moltiplicazione(){
+        var num1= document.getElementById("num1").value;
+        var num2= document.getElementById("num2").value;
+        var moltiplicazione= parseInt(num1) * parseInt(num2);
+alert(moltiplicazione);
+     }
+    
+     function divisione(){
+        var num1= document.getElementById("num1").value;
+        var num2= document.getElementById("num2").value;
+        var divisione= parseInt(num1) / parseInt(num2);
+alert(divisione);
+     }
+     </script>
+     <body>
+    <input type="text" id="num1"><br>
+    <input typoe="text" id="num2"><br>
+   
+    <button onclick ="somma()">Somma</button> 
+    <button onclick ="moltiplicazione()">Moltiplicazione</button> 
+    <button onclick ="sottrazione()">Sottrazione</button> 
+    <button onclick ="divisione()">Divisione</button>
+</script>
+</body>
+</html>

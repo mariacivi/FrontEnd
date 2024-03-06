@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+var valoriNumerici = new Array();
+do {
+    var numero = (prompt("Scrivi un numero e premi e per terminare"));
+    if (numero!="e"){
+    valoriNumerici.push(numero);
+    }
+} while (numero != "e");
+var somma = 0;
+for (valore in valoriNumerici) {
+    somma=somma+parseInt(valoriNumerici[indice]);
+}
+console.log(somma);

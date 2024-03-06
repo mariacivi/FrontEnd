@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 8px;
+            margin: 5px;
+            background-color: blue;
+            color: #fff
+        }
+        #white-dark {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+    <script>
+        var on = 0
+        function dark(){
+            if (on == 0) {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color =  "white";
+            on = 1; }
+            else {
+            document.body.style.backgroundColor = "white";
+            document.body.style.color =  "black";
+            on = 0;
+            }
+        }
+        function politica() {
+            document.getElementById("politica").style.display = "block";
+            document.getElementById("sport").style.display = "none"
+            document.getElementById("moda").style.display = "none"
+            document.getElementById("arte").style.display = "none"
+            
+            }
+        function sport() {
+            document.getElementById("politica").style.display = "none";
+            document.getElementById("sport").style.display = "block"
+            document.getElementById("moda").style.display = "none"
+            document.getElementById("arte").style.display = "none"
+            
+            }
+        function moda() {
+            document.getElementById("politica").style.display = "none";
+            document.getElementById("sport").style.display = "none"
+            document.getElementById("moda").style.display = "block"
+            document.getElementById("arte").style.display = "none"
+            
+            }
+        function arte() {
+            document.getElementById("politica").style.display = "none";
+            document.getElementById("sport").style.display = "none"
+            document.getElementById("moda").style.display = "none"
+            document.getElementById("arte").style.display = "block"
+            
+            }
+    </script>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="politica()">POLITICA</button>
+        <button onclick="sport()">SPORT</button>
+        <button onclick="moda()">MODA</button>
+        <button onclick="arte()">ARTE</button>
+    </div>
+    <button id="white-dark" onclick="dark()">LIGH / DARK</button>
+    <div class="paragrafo1" id="politica">
+        <h1>Politica</h1>
+        <img src="data:image/jpeg;base64,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" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid velit ab iusto rerum aliquam, deleniti ad totam voluptas odio eos debitis id consequuntur excepturi, necessitatibus porro, obcaecati corporis perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aperiam officia, minus eius tempora quod aspernatur laboriosam quisquam molestiae eveniet amet magnam, sequi voluptate quasi, repudiandae ullam praesentium illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit earum accusamus nostrum, quo totam, reprehenderit quos vel quibusdam aut tenetur non veniam necessitatibus perferendis voluptas, eius laborum perspiciatis impedit.</p>
+    </div>
+    <div class="paragrafo2" id="sport">
+        <h1>Sport</h1>
+        <img src="https://immagini.trovaprezzi.it/magazine/2021/04/giornata-mondiale-dello-sport.jpg?tr=w-690,h-345" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid velit ab iusto rerum aliquam, deleniti ad totam voluptas odio eos debitis id consequuntur excepturi, necessitatibus porro, obcaecati corporis perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aperiam officia, minus eius tempora quod aspernatur laboriosam quisquam molestiae eveniet amet magnam, sequi voluptate quasi, repudiandae ullam praesentium illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit earum accusamus nostrum, quo totam, reprehenderit quos vel quibusdam aut tenetur non veniam necessitatibus perferendis voluptas, eius laborum perspiciatis impedit.</p>
+    </div>
+    <div class="paragrafo3" id="moda">
+        <h1>Moda</h1>
+        <img src="https://cdn.studenti.stbm.it/images/2018/11/20/migliori-scuole-di-moda-italiane-orig.jpeg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid velit ab iusto rerum aliquam, deleniti ad totam voluptas odio eos debitis id consequuntur excepturi, necessitatibus porro, obcaecati corporis perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aperiam officia, minus eius tempora quod aspernatur laboriosam quisquam molestiae eveniet amet magnam, sequi voluptate quasi, repudiandae ullam praesentium illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit earum accusamus nostrum, quo totam, reprehenderit quos vel quibusdam aut tenetur non veniam necessitatibus perferendis voluptas, eius laborum perspiciatis impedit.</p>
+    </div>
+    <div class="paragrafo4" id="arte">
+        <h1>Arte</h1>
+        <img src="https://www.raiscuola.rai.it/cropgd/1900x1069/dl/img/2021/02/05/1612556027311_1611824288956_arte.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquid velit ab iusto rerum aliquam, deleniti ad totam voluptas odio eos debitis id consequuntur excepturi, necessitatibus porro, obcaecati corporis perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos aperiam officia, minus eius tempora quod aspernatur laboriosam quisquam molestiae eveniet amet magnam, sequi voluptate quasi, repudiandae ullam praesentium illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit earum accusamus nostrum, quo totam, reprehenderit quos vel quibusdam aut tenetur non veniam necessitatibus perferendis voluptas, eius laborum perspiciatis impedit.</p>
+    </div>
+</body>
+</html>
