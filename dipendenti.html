@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
  
@@ -179,7 +178,7 @@
             btn.innerText = "Mostra dipendente";
             btn.id = "btn";
             document.getElementById("result5").appendChild(btn);
-            document.getElementById("btn").onclick = function () { mostraS() };
+            document.getElementById("btn").onclick = function () { mostraM() };
         }
  
         function mostraM() {
@@ -249,19 +248,24 @@
         }
  
         function ordinaStip() {
+            // Copia degli stipendi in un nuovo array per l'ordinamento
             var arrayStipendi = listaDip.map(dipendente => dipendente.stipendio);
  
+            // Ordinamento degli stipendi in modo crescente
             arrayStipendi.sort((a, b) => a - b);
  
+            // Creazione di una stringa con i dipendenti ordinati per stipendio
             var elements = "";
             for (var i = 0; i < arrayStipendi.length; i++) {
                 for (var j = 0; j < listaDip.length; j++) {
                     if (listaDip[j].stipendio === arrayStipendi[i]) {
                         elements += listaDip[j].stampa() + '<br>';
-                        break; 
+                        break; // Esci dal ciclo interno quando trovi il dipendente corrispondente
                     }
                 }
             }
+ 
+            // Aggiornamento del contenuto dell'elemento HTML con i dipendenti ordinati per stipendio
             var nodo = document.getElementById("result10");
             nodo.innerHTML = elements;
         }
