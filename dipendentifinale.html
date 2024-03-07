@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
  
@@ -138,6 +139,10 @@
     <div id="result8"></div>
     <div id="result9"></div>
  
+    <hr>
+    <div id="result10"></div>
+    <button onclick="ordinaStip()">Ordina dipendenti</button>
+ 
     <script>
         function cercaMan() {
  
@@ -243,6 +248,23 @@
             nodo.innerHTML = elements;
         }
  
+        function ordinaStip() {
+            var arrayStipendi = listaDip.map(dipendente => dipendente.stipendio);
+ 
+            arrayStipendi.sort((a, b) => a - b);
+ 
+            var elements = "";
+            for (var i = 0; i < arrayStipendi.length; i++) {
+                for (var j = 0; j < listaDip.length; j++) {
+                    if (listaDip[j].stipendio === arrayStipendi[i]) {
+                        elements += listaDip[j].stampa() + '<br>';
+                        break; 
+                    }
+                }
+            }
+            var nodo = document.getElementById("result10");
+            nodo.innerHTML = elements;
+        }
  
     </script>
  
