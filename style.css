@@ -1,0 +1,10 @@
+button {
+    background-color: lightgreen;
+    transition: .3s ease all;
+}
+
+button:hover {
+    background-color: skyblue;
+    transition: .3s ease all;
+    transform: translateY(-5px);
+}
